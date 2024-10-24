@@ -76,6 +76,7 @@ export const addProductFormElements = [
       { id: "levi", label: "Levi's" },
       { id: "zara", label: "Zara" },
       { id: "h&m", label: "H&M" },
+      { id: "polo", label: "polo" },
     ],
   },
   {
@@ -159,6 +160,7 @@ export const brandOptionsMap = {
   levi: "Levi",
   zara: "Zara",
   "h&m": "H&M",
+  polo: "polo",
 };
 
 export const filterOptions = {
@@ -176,6 +178,7 @@ export const filterOptions = {
     { id: "levi", label: "Levi's" },
     { id: "zara", label: "Zara" },
     { id: "h&m", label: "H&M" },
+    { id: "polo", label: "polo" },
   ],
 };
 

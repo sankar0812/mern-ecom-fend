@@ -46,6 +46,7 @@ const brandsWithIcon = [
   { id: "levi", label: "Levi's", icon: Airplay },
   { id: "zara", label: "Zara", icon: Images },
   { id: "h&m", label: "H&M", icon: Heater },
+  { id: "polo", label: "polo", icon: Shirt },
 ];
 function ShoppingHome() {
   const [currentSlide, setCurrentSlide] = useState(0);

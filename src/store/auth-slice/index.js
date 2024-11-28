@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "http://3.7.156.47:5000//api/auth/register",
+      "https://vizosecomapi.smkvsilks.in/api/auth/register",
       formData,
       {
         withCredentials: true,
@@ -28,7 +28,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "http://3.7.156.47:5000/api/auth/login",
+      "https://vizosecomapi.smkvsilks.in/api/auth/login",
       formData,
       {
         withCredentials: true,
@@ -44,7 +44,7 @@ export const logoutUser = createAsyncThunk(
 
   async () => {
     const response = await axios.post(
-      "http://3.7.156.47:5000/api/auth/logout",
+      "https://vizosecomapi.smkvsilks.in/api/auth/logout",
       {},
       {
         withCredentials: true,
@@ -60,7 +60,7 @@ export const checkAuth = createAsyncThunk(
 
   async () => {
     const response = await axios.get(
-      "http://3.7.156.47:5000/api/auth/check-auth",
+      "https://vizosecomapi.smkvsilks.in/api/auth/check-auth",
       {
         withCredentials: true,
         headers: {

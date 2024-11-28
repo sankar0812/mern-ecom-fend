@@ -10,7 +10,7 @@ export const getFeatureImages = createAsyncThunk(
   "/order/getFeatureImages",
   async () => {
     const response = await axios.get(
-      `http://3.7.156.47:5000/api/common/feature/get`
+      `https://vizosecomapi.smkvsilks.in/api/common/feature/get`
     );
 
     return response.data;
@@ -21,7 +21,7 @@ export const addFeatureImage = createAsyncThunk(
   "/order/addFeatureImage",
   async (image) => {
     const response = await axios.post(
-      `http://3.7.156.47:5000/api/common/feature/add`,
+      `https://vizosecomapi.smkvsilks.in/api/common/feature/add`,
       { image }
     );
 

@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://vizosecomapi.smkvsilks.in/api/auth/register",
+      "http://vizosecomapi.smkvsilks.in/api/auth/register",
       formData,
       {
         withCredentials: true,

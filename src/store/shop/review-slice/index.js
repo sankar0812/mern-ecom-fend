@@ -10,7 +10,7 @@ export const addReview = createAsyncThunk(
   "/order/addReview",
   async (formdata) => {
     const response = await axios.post(
-      `https://vizosecomapi.smkvsilks.in/api/shop/review/add`,
+      `http://vizosecomapi.smkvsilks.in/api/shop/review/add`,
       formdata
     );
 
@@ -20,7 +20,7 @@ export const addReview = createAsyncThunk(
 
 export const getReviews = createAsyncThunk("/order/getReviews", async (id) => {
   const response = await axios.get(
-    `https://vizosecomapi.smkvsilks.in/api/shop/review/${id}`
+    `http://vizosecomapi.smkvsilks.in/api/shop/review/${id}`
   );
 
   return response.data;

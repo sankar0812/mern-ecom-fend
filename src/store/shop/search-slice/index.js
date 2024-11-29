@@ -10,7 +10,7 @@ export const getSearchResults = createAsyncThunk(
   "/order/getSearchResults",
   async (keyword) => {
     const response = await axios.get(
-      `https://vizosecomapi.smkvsilks.in/api/shop/search/${keyword}`
+      `http://vizosecomapi.smkvsilks.in/api/shop/search/${keyword}`
     );
 
     return response.data;

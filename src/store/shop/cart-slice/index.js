@@ -10,7 +10,7 @@ export const addToCart = createAsyncThunk(
   "cart/addToCart",
   async ({ userId, productId, quantity }) => {
     const response = await axios.post(
-      "http://vizosecomapi.smkvsilks.in/api/shop/cart/add",
+      "https://mern-ecom-bend-production.up.railway.app/api/shop/cart/add",
       {
         userId,
         productId,
@@ -26,7 +26,7 @@ export const fetchCartItems = createAsyncThunk(
   "cart/fetchCartItems",
   async (userId) => {
     const response = await axios.get(
-      `http://vizosecomapi.smkvsilks.in/api/shop/cart/get/${userId}`
+      `https://mern-ecom-bend-production.up.railway.app/api/shop/cart/get/${userId}`
     );
 
     return response.data;
@@ -37,7 +37,7 @@ export const deleteCartItem = createAsyncThunk(
   "cart/deleteCartItem",
   async ({ userId, productId }) => {
     const response = await axios.delete(
-      `http://vizosecomapi.smkvsilks.in/api/shop/cart/${userId}/${productId}`
+      `https://mern-ecom-bend-production.up.railway.app/api/shop/cart/${userId}/${productId}`
     );
 
     return response.data;
@@ -48,7 +48,7 @@ export const updateCartQuantity = createAsyncThunk(
   "cart/updateCartQuantity",
   async ({ userId, productId, quantity }) => {
     const response = await axios.put(
-      "http://vizosecomapi.smkvsilks.in/api/shop/cart/update-cart",
+      "https://mern-ecom-bend-production.up.railway.app/api/shop/cart/update-cart",
       {
         userId,
         productId,

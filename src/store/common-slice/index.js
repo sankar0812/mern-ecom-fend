@@ -10,7 +10,7 @@ export const getFeatureImages = createAsyncThunk(
   "/order/getFeatureImages",
   async () => {
     const response = await axios.get(
-      `http://vizosecomapi.smkvsilks.in/api/common/feature/get`
+      `https://mern-ecom-bend-production.up.railway.app/api/common/feature/get`
     );
 
     return response.data;
@@ -21,7 +21,7 @@ export const addFeatureImage = createAsyncThunk(
   "/order/addFeatureImage",
   async (image) => {
     const response = await axios.post(
-      `http://vizosecomapi.smkvsilks.in/api/common/feature/add`,
+      `https://mern-ecom-bend-production.up.railway.app/api/common/feature/add`,
       { image }
     );
 

@@ -13,7 +13,7 @@ export const createNewOrder = createAsyncThunk(
   "/order/createNewOrder",
   async (orderData) => {
     const response = await axios.post(
-      "http://vizosecomapi.smkvsilks.in/api/shop/order/create",
+      "https://mern-ecom-bend-production.up.railway.app/api/shop/order/create",
       orderData
     );
 
@@ -25,7 +25,7 @@ export const capturePayment = createAsyncThunk(
   "/order/capturePayment",
   async ({ paymentId, payerId, orderId }) => {
     const response = await axios.post(
-      "http://vizosecomapi.smkvsilks.in/api/shop/order/capture",
+      "https://mern-ecom-bend-production.up.railway.app/api/shop/order/capture",
       {
         paymentId,
         payerId,
@@ -41,7 +41,7 @@ export const getAllOrdersByUserId = createAsyncThunk(
   "/order/getAllOrdersByUserId",
   async (userId) => {
     const response = await axios.get(
-      `http://vizosecomapi.smkvsilks.in/api/shop/order/list/${userId}`
+      `https://mern-ecom-bend-production.up.railway.app/api/shop/order/list/${userId}`
     );
 
     return response.data;
@@ -52,7 +52,7 @@ export const getOrderDetails = createAsyncThunk(
   "/order/getOrderDetails",
   async (id) => {
     const response = await axios.get(
-      `http://vizosecomapi.smkvsilks.in/api/shop/order/details/${id}`
+      `https://mern-ecom-bend-production.up.railway.app/api/shop/order/details/${id}`
     );
 
     return response.data;
